@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Manrope Font */
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url("./assets/manropeFont/Manrope-Bold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Manrope-ExtraBold";
+  src: url("./assets/manropeFont/Manrope-ExtraBold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Manrope-ExtraLight";
+  src: url("./assets/manropeFont/Manrope-ExtraLight.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Manrope-Light";
+  src: url("./assets/manropeFont/Manrope-Light.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url("./assets/manropeFont/Manrope-Medium.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url("./assets/manropeFont/Manrope-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url("./assets/manropeFont/Manrope-SemiBold.ttf") format("opentype");
+}
+
+.manrope-regular {
+  font-family: "Manrope-Regular", sans-serif;
+  font-weight: 100;
+}
+
+.barlow-thin {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
