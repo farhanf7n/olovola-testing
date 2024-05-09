@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import olovolaLogo from "../assets/images/olovola-logo.svg";
 
@@ -10,7 +11,6 @@ function Navbar() {
 
   return (
     <>
-      {/* This example requires Tailwind CSS v2.0+ */}
       <div className="relative bg-white">
         <div className="max-w-[1280px] mx-auto">
           <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
@@ -27,7 +27,6 @@ function Navbar() {
                 onClick={() => setOpen(!open)}
               >
                 <span className="sr-only">Open menu</span>
-                {/* Heroicon name: outline/menu */}
                 <svg
                   className="h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -45,41 +44,47 @@ function Navbar() {
                 </svg>
               </button>
             </div>
-            <nav className="hidden md:flex space-x-[20px]">
+            <nav className="hidden md:flex">
+              {/* <Link
+                to="/"
+                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+              >
+                Home
+              </Link> */}
               <a
                 href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Home
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 About Us
               </a>
 
               <a
                 href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Driver
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Services
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Business to Business
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Blog
               </a>
@@ -87,7 +92,7 @@ function Navbar() {
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <a
                 href="#"
-                className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+                className="whitespace-nowrap text-[14px] bg-primary hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Suggestion
               </a>
@@ -108,7 +113,7 @@ function Navbar() {
         <div
           className={
             open
-              ? "opacity-100 scale-100 transition ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+              ? "opacity-100 scale-100 transition ease-out duration-200 absolute top-0 inset-x-0 p-2 transform origin-top-right md:hidden"
               : "opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
           }
         >

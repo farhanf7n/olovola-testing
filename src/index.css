@@ -37,14 +37,3 @@
   font-family: "Manrope-SemiBold";
   src: url("./assets/manropeFont/Manrope-SemiBold.ttf") format("opentype");
 }
-
-.manrope-regular {
-  font-family: "Manrope-Regular", sans-serif;
-  font-weight: 100;
-}
-
-.barlow-thin {
-  font-family: "Barlow", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
