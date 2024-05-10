@@ -53,38 +53,38 @@ function Navbar() {
               </Link> */}
               <a
                 href="#"
-                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+                className="transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Home
               </a>
               <a
                 href="#"
-                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+                className=" transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 About Us
               </a>
 
               <a
                 href="#"
-                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+                className="transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Driver
               </a>
               <a
                 href="#"
-                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+                className="transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Services
               </a>
               <a
                 href="#"
-                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+                className="transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Business to Business
               </a>
               <a
                 href="#"
-                className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+                className="transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Blog
               </a>
@@ -92,7 +92,7 @@ function Navbar() {
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <a
                 href="#"
-                className="whitespace-nowrap text-[14px] bg-primary hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+                className="whitespace-nowrap text-[14px] bg-primary hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium transition-all duration-300 ease-in-out"
               >
                 Suggestion
               </a>

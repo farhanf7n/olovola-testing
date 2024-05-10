@@ -1,4 +1,6 @@
 import Navbar from "../components/Navbar";
+import FAQ from "../components/FAQ";
+import Footer from "../components/Footer";
 
 import heroTruck from "../assets/images/heroTruck.png";
 import pakIcons from "../assets/images/pakIcons.png";
@@ -20,6 +22,11 @@ import CoalIcon from "../assets/images/CoalIcon.png";
 import OilIcon from "../assets/images/OilIcon.png";
 import FurnitureIcon from "../assets/images/FurnitureIcon.png";
 import PaperIcon from "../assets/images/PaperIcon.png";
+import MediumLTV from "../assets/images/MediumLTV.png";
+import trailerTruck from "../assets/images/trailer-truck.png";
+import loaderRickshaw from "../assets/images/loader-rickshaw.png";
+import appScreenshot from "../assets/images/appScreenshot.png";
+import GooglePlayButton from "../assets/images/GooglePlayButton.png";
 
 function HomePage() {
   return (
@@ -286,6 +293,173 @@ function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Vehicle Fleet Section */}
+      <div className="max-w-[1280px] mx-auto py-[71px]">
+        {/* Heading & Paragraph */}
+        <div>
+          <div className="flex flex-col text-3xl font-ManropeSB items-center">
+            <p className="text-center">
+              Vehicle{" "}
+              <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
+                Fleet
+              </span>
+            </p>
+          </div>
+          <p className="pt-4 text-center flex flex-col font-ManropeRegular text-[16px]">
+            <span>
+              Providing wide range of transport services and means of transport.
+            </span>
+          </p>
+        </div>
+        <div className="flex items-center justify-center pt-[60px]">
+          <div className="max-w-[1280px] flex flex-wrap gap-[20px]">
+            <div className="flex flex-wrap gap-[20px]">
+              <div className="w-[386px] h-[408px] flex flex-col justify-center items-center gap-[24px] p-[30px] items-left bg-white border-solid border-1 border-forBorder rounded-[16px]">
+                <img src={MediumLTV} className="w-[232px] h-[157px]" alt="" />
+                <div className="flex flex-col gap-[6px]">
+                  <p className="font-ManropeSB text-lg">Medium Range LTV</p>
+                  <p className="flex gap-[8px]">
+                    <span className="font-ManropeBold text-[16px]">
+                      Weight Capacity:
+                    </span>
+                    <span className="font-ManropeRegular text-[16px] text-secondaryLight">
+                      Up to 3 tonnes
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-[386px] h-[408px] flex flex-col justify-center items-center gap-[24px] p-[30px] items-left bg-white border-solid border-1 border-forBorder rounded-[16px]">
+                <div className="w-[232px] h-[157px] flex justify-center items-center">
+                  <img src={trailerTruck} alt="" />
+                </div>
+                <div className="flex flex-col gap-[6px]">
+                  <p className="font-ManropeSB text-lg">Pickup</p>
+                  <p className="flex gap-[8px]">
+                    <span className="font-ManropeBold text-[16px]">
+                      Weight Capacity:
+                    </span>
+                    <span className="font-ManropeRegular text-[16px] text-secondaryLight">
+                      Up to 1 ton
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-[386px] h-[408px] flex flex-col justify-center items-center gap-[24px] p-[30px] items-left bg-white border-solid border-1 border-forBorder rounded-[16px]">
+                <img
+                  src={loaderRickshaw}
+                  className="w-[219px] h-[169px]"
+                  alt=""
+                />
+                <div className="flex flex-col gap-[6px]">
+                  <p className="font-ManropeSB text-lg">Loader Rickshaw</p>
+                  <p className="flex gap-[8px]">
+                    <span className="font-ManropeBold text-[16px]">
+                      Weight Capacity:
+                    </span>
+                    <span className="font-ManropeRegular text-[16px] text-secondaryLight">
+                      400 kgs
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div className="max-w-[1280px] mx-auto py-[71px]">
+        <div>
+          <div className="flex flex-col text-3xl font-ManropeSB items-center">
+            <p className="text-center">
+              <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
+                FAQ
+              </span>
+            </p>
+          </div>
+          <p className="pt-4 text-center flex flex-col font-ManropeRegular text-[16px]">
+            <span>
+              Get answers to common questions about Olovola, our benefits and
+              our service etc.
+            </span>
+          </p>
+        </div>
+
+        {/* FAQ TEST */}
+        <FAQ />
+      </div>
+
+      {/* Download App Section */}
+      <div className="max-w-[1280px] mx-auto bg-secondary rounded-[12px]">
+        <div className="flex items-center justify-center py-[60px]">
+          <div className="w-1/2 flex flex-col justify-center items-left pl-20">
+            <p className="text-4xl text-white font-ManropeSB">
+              Using multiplatform technology to digitize freight
+            </p>
+            <p className="pt-3.5 font-ManropeRegular text-[16px] text-white">
+              The user has the best possible experience scheduling and tracking
+              shipments with 360° insights thanks to Olovola Dashboard & Mobile
+              Applications.
+            </p>
+            <a href="/" className="pt-6">
+              <img
+                src={GooglePlayButton}
+                className="w-[122px] h-[36px]"
+                alt=""
+              />
+            </a>
+          </div>
+          <div className="w-1/2 flex justify-center">
+            <img src={appScreenshot} alt="" />
+          </div>
+        </div>
+      </div>
+
+      {/* Newsletter Section */}
+      <div className="max-w-[1280px] mx-auto">
+        <div className="container flex flex-col xl:flex-row mx-auto px-5 py-8 xl:py-[71px] text-gray-500 bg-white rounded-2xl">
+          <div className="w-full mb-6 xl:mb-0 sm:text-center">
+            <div className="mb-4 text-secondary text-3xl font-ManropeSB">
+              Join 2,000+ subscribers
+            </div>
+
+            <div className="font-ManropeRegular text-[16px]">
+              Stay in the loop with everything you need to know.
+            </div>
+          </div>
+
+          <div className="w-full">
+            <div className="flex flex-col justify-center sm:flex-row gap-3 w-full">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                className="font-ManropeRegular text-[16px] sm:w-2/4 h-12 p-3 text-gray-900 border border-solid border-gray-300 rounded-lg shadow"
+              ></input>
+
+              <button
+                type="submit"
+                className="sm:w-1/4 h-12 shadow transition-all duration-300 ease-in-out whitespace-nowrap text-[14px] bg-primary hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+              >
+                Subscribe
+              </button>
+            </div>
+
+            <div className="mt-3 text-sm sm:text-center font-ManropeRegular">
+              We care about your data in our{" "}
+              <u className="cursor-pointer transition-all duration-300 ease-in-out hover:text-gray-700">
+                privacy policy
+              </u>
+              .
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
