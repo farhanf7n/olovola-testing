@@ -33,15 +33,15 @@ function HomePage() {
     <div>
       <Navbar />
       {/* Hero Section */}
-      <div className="bg-secondary">
+      <div className="bg-secondary px-5">
         <div className="max-w-[1280px] mx-auto">
-          <div className="flex items-center justify-center py-20">
-            <div className="w-1/2">
-              <p className="flex flex-col font-ManropeEB text-[80px] text-primary leading-[73px] pb-4 tracking-tight">
+          <div className="flex flex-col-reverse gap-4 lg:flex-row items-center justify-center py-20">
+            <div className="w-full lg:w-1/2">
+              <p className="flex flex-col text-[36px] font-ManropeEB sm:text-[80px] text-primary  leading-[44px] sm:leading-[73px] pb-4 tracking-tight">
                 <span>Moving Forward</span>
                 <span>Moving Better</span>
               </p>
-              <p className="text-lightGrey text-xl font-ManropeRegular">
+              <p className="text-lightGrey text-xl leading-[28px] font-ManropeRegular">
                 <span>
                   Starting from loading to unloading and maintaining the highest
                   standards in terms of safety while in transit, we take nothing
@@ -49,7 +49,7 @@ function HomePage() {
                 </span>
               </p>
             </div>
-            <div className="w-1/2 flex justify-center">
+            <div className="w-full lg:w-1/2 flex justify-center">
               <img
                 src={heroTruck}
                 className="w-max-[528px] h-max-[433px]"
@@ -83,7 +83,7 @@ function HomePage() {
             </p>
             <p>becomes simple</p>
           </div>
-          <p className="pt-4 text-center flex flex-col font-ManropeRegular">
+          <p className="pt-4 text-center px-[16px] text-lg flex flex-col font-ManropeRegular">
             <span>
               Sending anything has never been easier; with our mobile app, you
               can track the live location of your shipment, rely on
@@ -95,34 +95,34 @@ function HomePage() {
           </p>
         </div>
         {/* B2B image & Right side icons */}
-        <div className="flex items-center justify-center pt-[60px]">
-          <div className="w-1/2 flex justify-center">
+        <div className="flex flex-col md:flex-row items-center justify-center pt-[60px]">
+          <div className="w-full sm:w-1/2 flex justify-center">
             <img
               src={b2bMain}
               className="w-max-[524px] h-max-[370px] "
               alt=""
             />
           </div>
-          <div className="w-1/2 flex flex-wrap gap-[20px]">
-            <div className="w-[305px] h-[167px] flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
+          <div className="w-full sm:w-1/2 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[20px]">
+            <div className="flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={liveTracking} className="w-[56px] h-[56px]" alt="" />
               <p className="font-ManropeSB text-sm text-center">
                 Live Tracking
               </p>
             </div>{" "}
-            <div className="w-[305px] h-[167px] flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
+            <div className="flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={SecureFast} className="w-[56px] h-[56px]" alt="" />
               <p className="font-ManropeSB text-sm text-center">
                 Secure and Fast
               </p>
             </div>
-            <div className="w-[305px] h-[167px] flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
+            <div className="flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={OwnDashboard} className="w-[56px] h-[56px]" alt="" />
               <p className="font-ManropeSB text-sm text-center">
                 Your Own Dashboard
               </p>
             </div>{" "}
-            <div className="w-[305px] h-[167px] flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
+            <div className="flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={BestRates} className="w-[56px] h-[56px]" alt="" />
               <p className="font-ManropeSB text-sm text-center">Best Rates</p>
             </div>
@@ -142,7 +142,7 @@ function HomePage() {
               </span>
             </p>
           </div>
-          <p className="pt-4 text-center flex flex-col font-ManropeRegular text-[16px]">
+          <p className="pt-4 text-center px-[16px] flex flex-col font-ManropeRegular text-[16px]">
             <span>
               Join the Olovola team to take advantage of additional benefits
               including flexible earnings
@@ -152,7 +152,7 @@ function HomePage() {
         </div>
         {/* B2B image & Right side icons */}
         <div className="flex items-center justify-center pt-[60px]">
-          <div className="max-w-[1280px] flex flex-wrap gap-[20px]">
+          <div className="max-w-[1280px] flex flex-wrap justify-center gap-[20px]">
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={liveTracking} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
@@ -228,7 +228,7 @@ function HomePage() {
               </span>
             </p>
           </div>
-          <p className="pt-4 text-center flex flex-col font-ManropeRegular text-[16px]">
+          <p className="pt-4 px-[16px] text-center flex flex-col font-ManropeRegular text-[16px]">
             <span>
               We cover different industry sectors, from food and beverage,
               chemical, retail, durable goods and more.
@@ -238,7 +238,7 @@ function HomePage() {
         </div>
         <div className="flex items-center justify-center pt-[60px]">
           <div className="max-w-[1280px] flex flex-wrap gap-[20px]">
-            <div className="flex flex-wrap gap-[6px]">
+            <div className="flex flex-wrap justify-center gap-[6px]">
               <div className="w-[154px] h-[169px] flex flex-col gap-[8px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
                 <img src={fmcgIcon} className="w-[64px] h-[64px]" alt="" />
                 <p className="font-ManropeSB text-sm text-center">FMCG</p>
@@ -298,23 +298,23 @@ function HomePage() {
       <div className="max-w-[1280px] mx-auto py-[71px]">
         {/* Heading & Paragraph */}
         <div>
-          <div className="flex flex-col text-3xl font-ManropeSB items-center">
-            <p className="text-center">
+          <div className="flex flex-col px-[16px] text-3xl font-ManropeSB items-center">
+            <p className="text-center ">
               Vehicle{" "}
               <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
                 Fleet
               </span>
             </p>
           </div>
-          <p className="pt-4 text-center flex flex-col font-ManropeRegular text-[16px]">
+          <p className="pt-4 px-[16px] text-center flex flex-col font-ManropeRegular text-[16px]">
             <span>
               Providing wide range of transport services and means of transport.
             </span>
           </p>
         </div>
-        <div className="flex items-center justify-center pt-[60px]">
-          <div className="max-w-[1280px] flex flex-wrap gap-[20px]">
-            <div className="flex flex-wrap gap-[20px]">
+        <div className="flex items-center pt-[60px]">
+          <div className="max-w-[1280px] flex flex-wrap justify-center gap-[20px]">
+            <div className="flex flex-wrap justify-center gap-[20px]">
               <div className="w-[386px] h-[408px] flex flex-col justify-center items-center gap-[24px] p-[30px] items-left bg-white border-solid border-1 border-forBorder rounded-[16px]">
                 <img src={MediumLTV} className="w-[232px] h-[157px]" alt="" />
                 <div className="flex flex-col gap-[6px]">
@@ -380,7 +380,7 @@ function HomePage() {
               </span>
             </p>
           </div>
-          <p className="pt-4 text-center flex flex-col font-ManropeRegular text-[16px]">
+          <p className="pt-4 text-center px-[16px] flex flex-col font-ManropeRegular text-[16px]">
             <span>
               Get answers to common questions about Olovola, our benefits and
               our service etc.
@@ -393,9 +393,9 @@ function HomePage() {
       </div>
 
       {/* Download App Section */}
-      <div className="max-w-[1280px] mx-auto bg-secondary rounded-[12px]">
-        <div className="flex items-center justify-center py-[60px]">
-          <div className="w-1/2 flex flex-col justify-center items-left pl-20">
+      <div className="max-w-[1280px] mx-auto bg-secondary sm:rounded-[12px] ">
+        <div className="flex flex-col md:flex-row items-center gap-[20px] justify-center py-[60px] mx-[20px]">
+          <div className="w-full sm:w-1/2 flex flex-col justify-center items-left md:pl-20">
             <p className="text-4xl text-white font-ManropeSB">
               Using multiplatform technology to digitize freight
             </p>
@@ -412,7 +412,7 @@ function HomePage() {
               />
             </a>
           </div>
-          <div className="w-1/2 flex justify-center">
+          <div className="w-full sm:w-1/2 flex justify-center">
             <img src={appScreenshot} alt="" />
           </div>
         </div>

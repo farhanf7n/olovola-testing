@@ -5,8 +5,8 @@ import faqImage from "../assets/images/faqImage.png";
 const Accordion = () => {
   return (
     <section className="max-w-[1280px] mx-auto py-[71px]">
-      <div className="flex items-center justify-center pt-[60px]">
-        <div className="w-1/2 flex flex-col justify-center gap-4">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center pt-[60px]">
+        <div className="w-full sm:w-1/2 flex flex-col justify-center gap-4">
           <AccordionItem
             header="As an owner operator, what can you deduct?"
             text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
@@ -20,7 +20,7 @@ const Accordion = () => {
             text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
           />
         </div>
-        <div className="w-1/2 flex justify-center">
+        <div className="w-full sm:w-1/2 flex justify-center">
           <img src={faqImage} className="w-max-[524px] h-max-[370px]" alt="" />
         </div>
       </div>
