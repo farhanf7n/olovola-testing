@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import olovolaLogo from "../assets/images/olovola-logo.svg";
 import OlovolaBox from "../assets/images/Olovola-box.svg";
@@ -16,9 +16,9 @@ function Navbar() {
         <div className="max-w-[1280px] mx-auto">
           <div className="flex justify-between px items-center py-6 md:justify-start md:space-x-10 px-5">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#">
+              <Link to="/">
                 <img className="h-[27px] w-[147px]" src={olovolaLogo} alt="" />
-              </a>
+              </Link>
             </div>
             <div className="-mr-2 -my-2 md:hidden">
               <button
@@ -44,58 +44,82 @@ function Navbar() {
                 </svg>
               </button>
             </div>
-            <nav className="hidden md:flex">
+            <nav className="hidden md:flex gap-[6px]">
               {/* <Link
                 to="/"
                 className="text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
               >
                 Home
               </Link> */}
-              <a
-                href="#"
-                className="transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `${
+                    isActive ? "bg-[#080C09] text-[#FDD700]" : ""
+                  } transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium`
+                }
               >
                 Home
-              </a>
-              <a
-                href="#"
-                className=" transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+              </NavLink>
+              <NavLink
+                to="aboutus"
+                className={({ isActive }) =>
+                  `${
+                    isActive ? "bg-[#080C09] text-[#FDD700]" : ""
+                  } transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium`
+                }
               >
                 About Us
-              </a>
+              </NavLink>
 
-              <a
-                href="#"
-                className="transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+              <NavLink
+                to="driver"
+                className={({ isActive }) =>
+                  `${
+                    isActive ? "bg-[#080C09] text-[#FDD700]" : ""
+                  } transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium`
+                }
               >
                 Driver
-              </a>
-              <a
-                href="#"
-                className="transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+              </NavLink>
+              <NavLink
+                to="services"
+                className={({ isActive }) =>
+                  `${
+                    isActive ? "bg-[#080C09] text-[#FDD700]" : ""
+                  } transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium`
+                }
               >
                 Services
-              </a>
-              <a
-                href="#"
-                className="transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+              </NavLink>
+              <NavLink
+                to="b2b"
+                className={({ isActive }) =>
+                  `${
+                    isActive ? "bg-[#080C09] text-[#FDD700]" : ""
+                  } transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium`
+                }
               >
                 Business to Business
-              </a>
-              <a
-                href="#"
-                className="transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium"
+              </NavLink>
+              <NavLink
+                to="blog"
+                className={({ isActive }) =>
+                  `${
+                    isActive ? "bg-[#080C09] text-[#FDD700]" : ""
+                  } transition-all duration-300 ease-in-out text-[14px] hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium`
+                }
               >
                 Blog
-              </a>
+              </NavLink>
             </nav>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              <a
-                href="#"
+              <Link
+                to="suggestion"
                 className="whitespace-nowrap text-[14px] bg-primary hover:bg-[#080C09] hover:text-[#FDD700] py-[10px] px-[20px] rounded-[8px] font-ManropeMedium transition-all duration-300 ease-in-out"
               >
                 Suggestion
-              </a>
+              </Link>
             </div>
           </div>
         </div>
