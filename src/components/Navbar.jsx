@@ -175,8 +175,8 @@ function Navbar() {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                  <a
-                    href="#"
+                  <NavLink
+                    to="/"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <svg
@@ -203,9 +203,9 @@ function Navbar() {
                     <span className="ml-3 text-base font-medium text-gray-900">
                       Home
                     </span>
-                  </a>
-                  <a
-                    href="#"
+                  </NavLink>
+                  <NavLink
+                    to="aboutus"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <svg
@@ -261,9 +261,9 @@ function Navbar() {
                     <span className="ml-3 text-base font-medium text-gray-900">
                       About Us
                     </span>
-                  </a>
-                  <a
-                    href="#"
+                  </NavLink>
+                  <NavLink
+                    to="driver"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <svg
@@ -296,9 +296,9 @@ function Navbar() {
                     <span className="ml-3 text-base font-medium text-gray-900">
                       Driver
                     </span>
-                  </a>
-                  <a
-                    href="#"
+                  </NavLink>
+                  <NavLink
+                    to="services"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <svg
@@ -320,9 +320,9 @@ function Navbar() {
                     <span className="ml-3 text-base font-medium text-gray-900">
                       Services
                     </span>
-                  </a>
-                  <a
-                    href="#"
+                  </NavLink>
+                  <NavLink
+                    to="b2b"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <svg
@@ -363,9 +363,9 @@ function Navbar() {
                     <span className="ml-3 text-base font-medium text-gray-900">
                       Business to business
                     </span>
-                  </a>
-                  <a
-                    href="#"
+                  </NavLink>
+                  <NavLink
+                    to="blog"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <svg
@@ -404,7 +404,7 @@ function Navbar() {
                     <span className="ml-3 text-base font-medium text-gray-900">
                       Blog
                     </span>
-                  </a>
+                  </NavLink>
                 </nav>
               </div>
             </div>

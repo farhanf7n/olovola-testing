@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 
@@ -31,7 +30,6 @@ import GooglePlayButton from "../assets/images/GooglePlayButton.png";
 function HomePage() {
   return (
     <div>
-      <Navbar />
       {/* Hero Section */}
       <div className="bg-secondary px-5">
         <div className="max-w-[1280px] mx-auto">
@@ -103,7 +101,7 @@ function HomePage() {
               alt=""
             />
           </div>
-          <div className="w-full sm:w-1/2 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[20px]">
+          <div className="w-full sm:w-1/2 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-[20px]">
             <div className="flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={liveTracking} className="w-[56px] h-[56px]" alt="" />
               <p className="font-ManropeSB text-sm text-center">
