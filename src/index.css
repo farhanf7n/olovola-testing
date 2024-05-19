@@ -37,3 +37,12 @@
   font-family: "Manrope-SemiBold";
   src: url("./assets/manropeFont/Manrope-SemiBold.ttf") format("opentype");
 }
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+}
