@@ -1,9 +1,15 @@
 import FooterLogo from "../assets/images/FooterLogo.png";
+import olovolaRoundedLogo from "../assets/images/olovolaRoundedLogo.png";
 
 function Footer() {
   return (
-    <div className="bg-secondary py-[71px] ">
-      <div className="mx-[20px]">
+    <div className="relative bg-secondary py-[71px] z-[1] overflow-hidden">
+      <img
+        src={olovolaRoundedLogo}
+        className=" absolute top-[-80px] right-[-70px] z-[-1]"
+        alt=""
+      />
+      <div className="mx-[20px] z-[2]">
         <div className="max-w-[1280px] mx-auto flex flex-col h-full justify-center items-center">
           <div className="mb-3 flex flex-wrap justify-between gap-6 w-full mx-[20px]">
             <div>

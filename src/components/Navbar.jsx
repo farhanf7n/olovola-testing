@@ -14,7 +14,7 @@ function Navbar() {
     <>
       <div className="relative bg-white">
         <div className="max-w-[1280px] mx-auto">
-          <div className="flex justify-between px items-center py-6 md:justify-start md:space-x-10 px-5">
+          <div className="flex justify-between px items-center py-6 md:justify-start md:space-x-10 px-5 lg:px-0">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <Link to="/">
                 <img className="h-[27px] w-[147px]" src={olovolaLogo} alt="" />
