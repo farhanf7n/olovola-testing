@@ -419,7 +419,7 @@ function HomePage() {
       {/* Newsletter Section */}
       <div className="max-w-[1280px] mx-auto">
         <div className="container flex flex-col xl:flex-row mx-auto px-5 py-8 xl:py-[71px] text-gray-500 bg-white rounded-2xl">
-          <div className="w-full mb-6 xl:mb-0 sm:text-center">
+          <div className="w-full mb-6 xl:mb-0 sm:text-left">
             <div className="mb-4 text-secondary text-3xl font-ManropeSB">
               Join 2,000+ subscribers
             </div>

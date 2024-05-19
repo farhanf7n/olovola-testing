@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import FooterLogo from "../assets/images/FooterLogo.png";
 import olovolaRoundedLogo from "../assets/images/olovolaRoundedLogo.png";
 
@@ -30,53 +31,53 @@ function Footer() {
               <p className="mb-3 font-manropeBold text-[26px] text-lightGrey uppercase">
                 Pages
               </p>
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
                 B2B
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
                 Our Benefits
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
                 Things We Move
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
                 Vehicle Fleet
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
                 FAQ
-              </a>
+              </Link>
             </nav>
             <nav>
               <p className="mb-3 font-manropeBold text-[26px] text-lightGrey uppercase">
                 Blogs
               </p>
-              <a
-                href="#"
+              <Link
+                to="/blog"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
                 All Blogs
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/blog"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
                 Technology
-              </a>
+              </Link>
             </nav>
             <nav>
               <p className="mb-3 font-manropeBold text-[26px] text-lightGrey uppercase">
@@ -93,27 +94,27 @@ function Footer() {
           </div>
           <div className="flex flex-col items-center gap-[20px] justify-between pt-10 mt-10 border-t border-gray-100 md:flex-row md:items-center w-full">
             <p className="text-left font-ManropeRegular text-white text-[16px] md:mb-0">
-              © Copyright 2021 Tails. All Rights Reserved.
+              © Copyright 2024 Olovola. All Rights Reserved.
             </p>
             <div className="flex items-start justify-start space-x-6 md:items-center md:justify-center">
-              <a
-                href="#_"
+              <Link
+                to="/Nopagefound"
                 className="font-ManropeRegular text-white text-[16px] transition hover:text-primary"
               >
                 Terms of Service
-              </a>
-              <a
-                href="#_"
+              </Link>
+              <Link
+                to="/Nopagefound"
                 className="font-ManropeRegular text-white text-[16px] transition hover:text-primary"
               >
                 Privacy Policy
-              </a>
-              <a
-                href="#_"
+              </Link>
+              <Link
+                to="/Nopagefound"
                 className="font-ManropeRegular text-white text-[16px] transition hover:text-primary"
               >
                 Cookie Policy
-              </a>
+              </Link>
             </div>
             <div className="flex gap-[8px]">
               <div className="flex justify-center gap-[12px]">
