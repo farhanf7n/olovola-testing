@@ -43,7 +43,7 @@ function Driver() {
       </div>
 
       {/* Form Section */}
-      <div className="relative max-w-[1280px] mx-auto lg:h-[490px] lg:rounded-[24px] lg:border lg:border-primary my-[71px]">
+      <div className="relative max-w-[1280px] mx-auto lg:h-[490px] lg:rounded-[24px] lg:border lg:border-primary mt-[8px] mb-[71px]">
         <div
           className="absolute inset-0 bg-cover bg-center z-[-1] lg:rounded-[24px]"
           style={{ backgroundImage: `url(${truckMoving})` }}

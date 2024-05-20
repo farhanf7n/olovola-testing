@@ -1,0 +1,17 @@
+{
+  "NavLinks": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "driver": "Driver",
+    "services": "Services",
+    "businessToBusiness": "Business To Business",
+    "blog": "Blog",
+    "suggestion": "Suggestion"
+  },
+
+  "BannerHeadings": {
+    "span1": "Moving Forward",
+    "span2": "Moving Better",
+    "subParagraph": "Starting from loading to unloading and maintaining the highest standards in terms of safety while in transit, we take nothing to chance."
+  }
+}

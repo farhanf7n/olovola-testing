@@ -1,33 +1,40 @@
+import LanguageSelector from "../components/Language-selector";
+import { Trans, useTranslation } from "react-i18next";
+
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 
-import heroTruck from "../assets/images/heroTruck.png";
-import pakIcons from "../assets/images/pakIcons.png";
-import b2bMain from "../assets/images/b2bMain.png";
-import liveTracking from "../assets/images/liveTracking.png";
-import SecureFast from "../assets/images/Securefast.png";
-import OwnDashboard from "../assets/images/OwnDashboard.png";
-import BestRates from "../assets/images/BestRates.png";
-import Schedule from "../assets/images/Schedule.png";
-import Transparency from "../assets/images/Transparency.png";
-import FullSupport from "../assets/images/FullSupport.png";
-import DiscountsCosts from "../assets/images/DiscountsCosts.png";
-import LessBureaucracy from "../assets/images/LessBureaucracy.png";
-import fmcgIcon from "../assets/images/fmcgIcon.png";
-import SteelIcon from "../assets/images/SteelIcon.png";
-import AgricultureIcon from "../assets/images/AgricultureIcon.png";
-import ConstructionIcon from "../assets/images/ConstructionIcon.png";
-import CoalIcon from "../assets/images/CoalIcon.png";
-import OilIcon from "../assets/images/OilIcon.png";
-import FurnitureIcon from "../assets/images/FurnitureIcon.png";
-import PaperIcon from "../assets/images/PaperIcon.png";
-import MediumLTV from "../assets/images/MediumLTV.png";
-import trailerTruck from "../assets/images/trailer-truck.png";
-import loaderRickshaw from "../assets/images/loader-rickshaw.png";
-import appScreenshot from "../assets/images/appScreenshot.png";
-import GooglePlayButton from "../assets/images/GooglePlayButton.png";
+import {
+  heroTruck,
+  pakIcons,
+  b2bMain,
+  liveTracking,
+  SecureFast,
+  OwnDashboard,
+  BestRates,
+  Schedule,
+  Transparency,
+  FullSupport,
+  DiscountsCosts,
+  LessBureaucracy,
+  fmcgIcon,
+  SteelIcon,
+  AgricultureIcon,
+  ConstructionIcon,
+  CoalIcon,
+  OilIcon,
+  FurnitureIcon,
+  PaperIcon,
+  MediumLTV,
+  trailerTruck,
+  loaderRickshaw,
+  appScreenshot,
+  GooglePlayButton,
+} from "../assets/assets";
 
 function HomePage() {
+  const { t } = useTranslation();
+  const { span1, span2, subParagraph } = t("BannerHeadings");
   return (
     <div>
       {/* Hero Section */}
@@ -36,15 +43,11 @@ function HomePage() {
           <div className="flex flex-col-reverse gap-4 lg:flex-row items-center justify-center py-20">
             <div className="w-full lg:w-1/2">
               <p className="flex flex-col text-[36px] font-ManropeEB sm:text-[80px] text-primary  leading-[44px] sm:leading-[73px] pb-4 tracking-tight">
-                <span>Moving Forward</span>
-                <span>Moving Better</span>
+                <span>{span1}</span>
+                <span>{span2}</span>
               </p>
               <p className="text-lightGrey text-xl leading-[28px] font-ManropeRegular">
-                <span>
-                  Starting from loading to unloading and maintaining the highest
-                  standards in terms of safety while in transit, we take nothing
-                  to chance.
-                </span>
+                <span>{subParagraph}</span>
               </p>
             </div>
             <div className="w-full lg:w-1/2 flex justify-center">
