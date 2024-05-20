@@ -23,15 +23,15 @@ function Driver() {
     <div>
       {/* Banner Section */}
       <div className="max-w-[1280px] mx-auto">
-        <div className="relative h-[341px] w-full">
-          <div className="z-[-99]">
+        <div className="relative h-[341px] w-full z-[-1]">
+          <div className="z-[-1]">
             <div
               className="absolute inset-0 bg-cover bg-center lg:rounded-[24px]"
               style={{ backgroundImage: `url(${driverBanner})` }}
             ></div>
             <div className="absolute inset-0 bg-black opacity-60 lg:rounded-[24px]"></div>
           </div>
-          <div className="flex flex-col justify-center items-center z-[999] w-full h-full absolute">
+          <div className="flex flex-col justify-center items-center z-[1] w-full h-full absolute">
             <p className="uppercase text-[36px] font-ManropeEB sm:text-[80px] text-primary leading-[44px] sm:leading-[73px] pb-4 tracking-tight font-extrabold">
               Driver
             </p>
@@ -391,7 +391,7 @@ function Driver() {
                   02
                 </p>
               </div>
-              <div className="flex flex-col-reverse sm:flex-row gap-4 items-center justify-center px-10">
+              <div className="flex gap-4 items-center justify-center px-10">
                 <div className="flex flex-col gap-[15px] items-start">
                   <img
                     src={mapAndCar}

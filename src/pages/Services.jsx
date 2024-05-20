@@ -7,7 +7,7 @@ function Services() {
         className="flex flex-col items-center justify-center h-100"
         style={{ height: `calc(100vh - 98px)` }}
       >
-        <div className="text-5xl font-semibold mb-3">
+        <div className="text-5xl font-semibold mb-3 text-center">
           This Page Is Under Construction
         </div>
         <div className="opacity-50 mb-8">Will be up and running soon.</div>
