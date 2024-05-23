@@ -458,13 +458,13 @@ function Navbar() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div>
-                <a
-                  href="#"
+                <NavLink
+                  to="/suggestion"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent whitespace-nowrap text-[14px] bg-primary hover:bg-[#080C09] hover:text-[#FDD700] rounded-[8px] font-ManropeMedium transition-all duration-300 ease-in-out
                   "
                 >
                   {suggestion}
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>

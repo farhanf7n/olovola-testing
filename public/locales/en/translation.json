@@ -13,5 +13,40 @@
     "span1": "Moving Forward",
     "span2": "Moving Better",
     "subParagraph": "Starting from loading to unloading and maintaining the highest standards in terms of safety while in transit, we take nothing to chance."
+  },
+
+  "B2b": {
+    "para1": "Work between",
+    "styledSpan": "business",
+    "para2": "becomes simple",
+    "subPara": "Sending anything has never been easier; with our mobile app, you can track the live location of your shipment, rely onan accurate fleet, and access insights and analytics at the best rates available.",
+    "bFullTransHeading": "Full Transparency",
+    "bFullPara": "You will receive a weekly report on your earnings and discounts.",
+    "yourOwnDashboard": "Your Own Dashboard",
+    "secureFast": "Secure and Fast",
+    "lTracking": "Live Tracking",
+    "bestRates": "Best Rates"
+  },
+
+  "Benefits": {
+    "bPara": "Our",
+    "bStyledSpan": "Benefits",
+    "bSubParagraph": "Join the Olovola team to take advantage of additional benefits including flexible earningsand no surprise fees.",
+    "bLTracking": "Live Tracking",
+    "bLSubPara": "The more you drive, the more income you will earn - It's as simple as that.",
+    "bFS": "Flexible schedule",
+    "bFSsub": "Find a job where you have the flexibility to decide what days/times you want to work.",
+    "BFSupportHeading": "Full Support",
+    "bSupport": "You will receive support from the Olovola team, supporting you with Trip issues etc.",
+    "bDicountHeading": "Discounts for costs",
+    "bDiscountPara": "Receive discounts at reaching milestones.",
+    "bLessBur": "Less Bureaucracy",
+    "bLessBurPara": "We handle all documentation relating to the vehicle and routes, so you can drive with peace of mind.",
+    "bFullTransHeading": "Full Transparency",
+    "bFullPara": "You will receive a weekly report on your earnings and discounts."
+  },
+  "TWM": {
+    "TWMPara": "Things",
+    "TWMStyledSpan": "We Move"
   }
 }

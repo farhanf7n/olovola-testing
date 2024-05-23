@@ -33,8 +33,39 @@ import {
 } from "../assets/assets";
 
 function HomePage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { span1, span2, subParagraph } = t("BannerHeadings");
+  const {
+    para1,
+    para2,
+    styledSpan,
+    b2bMainHeading,
+    subPara,
+    lTracking,
+    yourOwnDashboard,
+    bestRates,
+    secureFast,
+  } = t("B2b");
+  const {
+    bPara,
+    bStyledSpan,
+    bSubParagraph,
+    bMainHeading,
+    bLTracking,
+    bLSubPara,
+    bFS,
+    bFSsub,
+    BFSupportHeading,
+    bSupport,
+    bDicountHeading,
+    bDiscountPara,
+    bLessBur,
+    bLessBurPara,
+    bFullPara,
+    bFullTransHeading,
+  } = t("Benefits");
+
+  const { TWMPara, TWMStyledSpan, TWMMainHeading } = t("TWM");
   return (
     <div>
       {/* Hero Section */}
@@ -75,24 +106,28 @@ function HomePage() {
       <div className="max-w-[1280px] mx-auto py-[71px]">
         {/* Heading & Paragraph */}
         <div>
-          <div className="flex flex-col text-3xl font-ManropeSB items-center">
-            <p>
-              Work between{" "}
-              <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
-                business
-              </span>
-            </p>
-            <p>becomes simple</p>
-          </div>
+          {i18n.language === "en" ? (
+            // div1: Displayed when the language is English
+            <div className="flex flex-col text-3xl font-ManropeSB items-center text-center">
+              <p>
+                {para1}{" "}
+                <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
+                  {styledSpan}
+                </span>
+              </p>
+              <p>{para2}</p>
+            </div>
+          ) : (
+            // div2: Displayed when the language is not English (e.g., Urdu)
+            <div>
+              <p className="flex flex-col text-3xl font-ManropeSB items-center text-center">
+                {b2bMainHeading}
+                <div className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[22px] before:w-[150px] before:bottom-[-4px] before:right-0 before:z-[-1]"></div>
+              </p>
+            </div>
+          )}
           <p className="pt-4 text-center px-[16px] text-lg flex flex-col font-ManropeRegular">
-            <span>
-              Sending anything has never been easier; with our mobile app, you
-              can track the live location of your shipment, rely on
-            </span>
-            <span>
-              an accurate fleet, and access insights and analytics at the best
-              rates available.
-            </span>
+            <span>{subPara}</span>
           </p>
         </div>
         {/* B2B image & Right side icons */}
@@ -107,25 +142,21 @@ function HomePage() {
           <div className="w-full sm:w-1/2 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-[20px]">
             <div className="flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={liveTracking} className="w-[56px] h-[56px]" alt="" />
-              <p className="font-ManropeSB text-sm text-center">
-                Live Tracking
-              </p>
-            </div>{" "}
+              <p className="font-ManropeSB text-sm text-center">{lTracking}</p>
+            </div>
             <div className="flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={SecureFast} className="w-[56px] h-[56px]" alt="" />
-              <p className="font-ManropeSB text-sm text-center">
-                Secure and Fast
-              </p>
+              <p className="font-ManropeSB text-sm text-center">{secureFast}</p>
             </div>
             <div className="flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={OwnDashboard} className="w-[56px] h-[56px]" alt="" />
               <p className="font-ManropeSB text-sm text-center">
-                Your Own Dashboard
+                {yourOwnDashboard}
               </p>
             </div>{" "}
             <div className="flex flex-col gap-[24px] p-[30px] items-center bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={BestRates} className="w-[56px] h-[56px]" alt="" />
-              <p className="font-ManropeSB text-sm text-center">Best Rates</p>
+              <p className="font-ManropeSB text-sm text-center">{bestRates}</p>
             </div>
           </div>
         </div>
@@ -135,81 +166,76 @@ function HomePage() {
       <div className="max-w-[1280px] mx-auto py-[71px]">
         {/* Heading & Paragraph */}
         <div>
-          <div className="flex flex-col text-3xl font-ManropeSB items-center">
-            <p className="text-center">
-              Our{" "}
-              <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
-                Benefits
-              </span>
-            </p>
-          </div>
-          <p className="pt-4 text-center px-[16px] flex flex-col font-ManropeRegular text-[16px]">
-            <span>
-              Join the Olovola team to take advantage of additional benefits
-              including flexible earnings
-            </span>
-            <span>and no surprise fees.</span>
+          {i18n.language === "en" ? (
+            // div1: Displayed when the language is English
+            <div className="flex flex-col text-3xl font-ManropeSB items-center text-center">
+              <p>
+                {bPara}{" "}
+                <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
+                  {bStyledSpan}
+                </span>
+              </p>
+            </div>
+          ) : (
+            // div2: Displayed when the language is not English (e.g., Urdu)
+            <div>
+              <p className="flex flex-col text-3xl font-ManropeSB items-center text-center">
+                {bMainHeading}
+                <div className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[22px] before:w-[50px] before:bottom-[-4px] before:right-[10px] before:z-[-1]"></div>
+              </p>
+            </div>
+          )}
+          <p className="pt-4 text-center px-[16px] text-lg flex flex-col font-ManropeRegular">
+            <span>{bSubParagraph}</span>
           </p>
         </div>
+
         {/* B2B image & Right side icons */}
         <div className="flex items-center justify-center pt-[60px]">
           <div className="max-w-[1280px] flex flex-wrap justify-center gap-[20px]">
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={liveTracking} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Live Tracking</p>
-                <p className="font-ManropeRegular text-[16px]">
-                  The more you drive, the more income you will earn - It's as
-                  simple as that.
-                </p>
+                <p className="font-ManropeSB text-lg">{bLTracking}</p>
+                <p className="font-ManropeRegular text-[16px]">{bLSubPara}</p>
               </div>
             </div>
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={Schedule} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Flexible schedule</p>
-                <p className="font-ManropeRegular text-[16px]">
-                  Find a job where you have the flexibility to decide what
-                  days/times you want to work.
-                </p>
+                <p className="font-ManropeSB text-lg">{bFS}</p>
+                <p className="font-ManropeRegular text-[16px]">{bFSsub}</p>
               </div>
             </div>
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={Transparency} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Full Transparency</p>
-                <p className="font-ManropeRegular text-[16px]">
-                  You will receive a weekly report on your earnings and
-                  discounts.
-                </p>
+                <p className="font-ManropeSB text-lg">{bFullTransHeading}</p>
+                <p className="font-ManropeRegular text-[16px]">{bFullPara}</p>
               </div>
             </div>
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={FullSupport} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Full Support</p>
-                <p className="font-ManropeRegular text-[16px]">
-                  You will receive support from the Olovola team, supporting you
-                  with Trip issues etc.
-                </p>
+                <p className="font-ManropeSB text-lg">{BFSupportHeading}</p>
+                <p className="font-ManropeRegular text-[16px]">{bSupport}</p>
               </div>
             </div>
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={DiscountsCosts} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Discounts for costs</p>
+                <p className="font-ManropeSB text-lg">{bDicountHeading}</p>
                 <p className="font-ManropeRegular text-[16px]">
-                  Receive discounts at reaching milestones.
+                  {bDiscountPara}
                 </p>
               </div>
             </div>
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={LessBureaucracy} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Less Bureaucracy</p>
+                <p className="font-ManropeSB text-lg">{bLessBur}</p>
                 <p className="font-ManropeRegular text-[16px]">
-                  We handle all documentation relating to the vehicle and
-                  routes, so you can drive with peace of mind.
+                  {bLessBurPara}
                 </p>
               </div>
             </div>
@@ -221,14 +247,27 @@ function HomePage() {
       <div className="max-w-[1280px] mx-auto py-[71px]">
         {/* Heading & Paragraph */}
         <div>
-          <div className="flex flex-col text-3xl font-ManropeSB items-center">
-            <p className="text-center">
-              Things{" "}
-              <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
-                We Move
-              </span>
-            </p>
-          </div>
+          {/* TEST */}
+          {i18n.language === "en" ? (
+            // div1: Displayed when the language is English
+            <div className="flex flex-col text-3xl font-ManropeSB items-center text-center">
+              <p>
+                {TWMPara}{" "}
+                <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
+                  {TWMStyledSpan}
+                </span>
+              </p>
+            </div>
+          ) : (
+            // div2: Displayed when the language is not English (e.g., Urdu)
+            <div>
+              <p className="flex flex-col text-3xl font-ManropeSB items-center text-center">
+                {TWMMainHeading}
+                <div className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[22px] before:w-[54px] before:bottom-[-4px] before:right-[-4px] before:z-[-1]"></div>
+              </p>
+            </div>
+          )}
+          {/* TEST */}
           <p className="pt-4 px-[16px] text-center flex flex-col font-ManropeRegular text-[16px]">
             <span>
               We cover different industry sectors, from food and beverage,
