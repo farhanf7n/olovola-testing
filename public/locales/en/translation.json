@@ -47,6 +47,43 @@
   },
   "TWM": {
     "TWMPara": "Things",
-    "TWMStyledSpan": "We Move"
+    "TWMStyledSpan": "We Move",
+    "TWMPara1": "We cover different industry sectors, from food and beverage, chemical, retail, durable goods and more.",
+    "TWMPara2": "Check the full list.",
+    "TWMfmcg": "FMCG",
+    "TWMagri": "Agriculture",
+    "TWMSteel": "Steel",
+    "TWMconst": "Construction",
+    "TWMcoal": "Coal",
+    "TWMoil": "Oil",
+    "TWMFurniture": "Furniture",
+    "TWMPaper": "Paper"
+  },
+  "VFleet": {
+    "VFPara": "Vehicle",
+    "VFStyledSpan": "Fleet",
+    "VFSubPara": "Providing wide range of transport services and means of transport.",
+    "MDltv": "Medium Range LTV",
+    "VFWeightHeading": "Weight Capacity:",
+    "MDWeightCap": "Up to 3 tonnes",
+    "VFPickup": "Pickup",
+    "PickupWeightCap": "Up to 1 ton",
+    "VFrickshaw": "Loader Rickshaw",
+    "RickshawWeightCap": "400 kgs"
+  },
+  "FAQ": {
+    "faqHeading": "FAQ",
+    "faqSubPara": "Get answers to common questions about Olovola, our benefits and our service etc."
+  },
+  "DownloadSection": {
+    "DloadMainheading": "Using multiplatform technology to digitize freight",
+    "DloadSubPara": "The user has the best possible experience scheduling and tracking shipments with 360° insights thanks to Olovola Dashboard & Mobile Applications."
+  },
+  "NLsection": {
+    "NLmainheading": "Join 2,000+ subscribers",
+    "NLsubPara": "Stay in the loop with everything you need to know.",
+    "emailPlaceholder": "Enter your email",
+    "subButton": "Subscribe",
+    "inputSubPara": "We care about your data in our privacy policy."
   }
 }

@@ -1,24 +1,62 @@
 import React, { useState } from "react";
 
+import LanguageSelector from "./Language-selector";
+import { Trans, useTranslation } from "react-i18next";
 import faqImage from "../assets/images/faqImage.png";
 
 const Accordion = () => {
+  const { i18n } = useTranslation();
   return (
-    <section className="max-w-[1280px] mx-auto py-[71px]">
+    <section className="max-w-[1280px] mx-auto">
       <div className="flex flex-col-reverse md:flex-row items-center justify-center pt-[60px]">
         <div className="w-full sm:w-1/2 flex flex-col justify-center gap-4">
-          <AccordionItem
-            header="As an owner operator, what can you deduct?"
-            text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-          />
-          <AccordionItem
-            header="What is Trailer Tracking?"
-            text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-          />
-          <AccordionItem
-            header="What is the 30-minute Break Rule?"
-            text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-          />
+          {/* First Accordion */}
+          {i18n.language === "en" ? (
+            // div1: Displayed when the language is English
+            <AccordionItem
+              header="As an owner operator, what can you deduct?"
+              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            />
+          ) : (
+            // div2: Displayed when the language is not English (e.g., Urdu)
+            <AccordionItem
+              className="text-right"
+              header="مالک آپریٹر کے طور پر، آپ کیا کٹوتی کر سکتے ہیں؟"
+              text="آپ کی پہلی بلاگ پوسٹ تیار ہونے میں 2-3 ہفتے لگتے ہیں۔ اس میں آپ کی ماہانہ مواد کی مارکیٹنگ کی حکمت عملی کی گہرائی سے تحقیق اور تخلیق شامل ہے جو ہم آپ کی پہلی بلاگ پوسٹ، Ipsum دستیاب لکھنے سے پہلے کرتے ہیں۔"
+            />
+          )}
+
+          {/* Second Accordion */}
+          {i18n.language === "en" ? (
+            // div1: Displayed when the language is English
+            <AccordionItem
+              header="What is Trailer Tracking?"
+              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available."
+            />
+          ) : (
+            // div2: Displayed when the language is not English (e.g., Urdu)
+            <AccordionItem
+              className="text-right"
+              header="ٹریلر ٹریکنگ کیا ہے؟"
+              text="آپ کی پہلی بلاگ پوسٹ تیار ہونے میں 2-3 ہفتے لگتے ہیں۔ اس میں آپ کی ماہانہ مواد کی مارکیٹنگ کی حکمت عملی کی گہرائی سے تحقیق اور تخلیق شامل ہے جو ہم آپ کی پہلی بلاگ پوسٹ، Ipsum دستیاب لکھنے سے پہلے کرتے ہیں۔"
+            />
+          )}
+
+          {/* Third Accordion */}
+          {i18n.language === "en" ? (
+            // div1: Displayed when the language is English
+            <AccordionItem
+              header="What is Trailer Tracking?"
+              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available."
+            />
+          ) : (
+            // div2: Displayed when the language is not English (e.g., Urdu)
+            <AccordionItem
+              className="text-right"
+              header="30 منٹ کے وقفے کا اصول کیا ہے؟"
+              text="آپ کی پہلی بلاگ پوسٹ تیار ہونے میں 2-3 ہفتے لگتے ہیں۔ اس میں آپ کی ماہانہ مواد کی مارکیٹنگ کی حکمت عملی کی گہرائی سے تحقیق اور تخلیق شامل ہے جو ہم آپ کی پہلی بلاگ پوسٹ، Ipsum دستیاب لکھنے سے پہلے کرتے ہیں۔"
+            />
+          )}
         </div>
         <div className="w-full sm:w-1/2 flex justify-center">
           <img src={faqImage} className="w-max-[524px] h-max-[370px]" alt="" />
@@ -37,17 +75,18 @@ const AccordionItem = ({ header, text }) => {
     event.preventDefault();
     setActive(!active);
   };
+
+  const { i18n } = useTranslation();
   return (
-    <div className="w-full p-4 sm:p-8 lg:px-6 xl:px-8 bg-lightBlue border-solid border-1 border-forBorder rounded-[16px] transition-all duration-300 ease-in-out">
+    <div className="w-full p-4 lg:px-6 xl:px-8 bg-lightBlue border-solid border-1 border-forBorder rounded-[16px] transition-all duration-300 ease-in-out">
       <button
         className={`faq-btn flex w-full text-left`}
         onClick={() => handleToggle()}
       >
         <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5 transition-all duration-300 ease-in-out">
           <svg
-            className={`fill-primary stroke-primary duration-200 ease-in-out ${
-              active ? "rotate-180" : ""
-            }`}
+            className={`fill-primary stroke-primary duration-200 ease-in-out ${active ? "rotate-180" : ""
+              }`}
             width="17"
             height="10"
             viewBox="0 0 17 10"
@@ -62,16 +101,16 @@ const AccordionItem = ({ header, text }) => {
         </div>
 
         <div className="w-full">
-          <h4 className="mt-1 font-semibold font-ManropeSB text-lg text-secondary">
+          <h4 className={`mt-1 font-ManropeSB text-lg ${i18n.language === "en" ? "text-left" : "text-right"
+              }`}>
             {header}
           </h4>
         </div>
       </button>
 
       <div
-        className={`pl-[62px] transition-all duration-300 ease-in-out ${
-          active ? "block" : "hidden"
-        }`}
+        className={`pl-[62px] transition-all duration-300 ease-in-out ${active ? "block" : "hidden"
+          }`}
       >
         <p className="py-3 font-ManropeRegular text-[16px]">{text}</p>
       </div>
