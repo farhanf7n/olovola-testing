@@ -85,5 +85,25 @@
     "emailPlaceholder": "Enter your email",
     "subButton": "Subscribe",
     "inputSubPara": "We care about your data in our privacy policy."
+  },
+  "Footer": {
+    "FooterSpan1": "Starting from loading to unloading and",
+    "FooterSpan2": "maintaining the highest standards in terms of",
+    "FooterSpan3": "safety while in transit, we take nothing to",
+    "PageHeading": "Pages",
+    "B2bHeading": "B2B",
+    "BenefitsHeading": "Our Benefits",
+    "TWMHeading": "Things We Move",
+    "VFHeading": "Vehicle Fleet",
+    "FAQHeading": "FAQ",
+    "BlogsHeading": "Blogs",
+    "AllBHeading": "All Blogs",
+    "TechHeading": "Technology",
+    "ContactHeading": "Contact",
+    "CopyrightFooterText": "© Copyright 2024 Olovola. All Rights Reserved.",
+    "TOSFooter": "Terms of Service",
+    "FooterPP": "Privacy Policy",
+    "FooterCP": "Cookie Policy",
+    "FooterContactNumber": "+92 309 6689696"
   }
 }

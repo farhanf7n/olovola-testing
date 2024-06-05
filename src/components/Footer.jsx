@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
+
+import LanguageSelector from "../components/Language-selector";
+import { Trans, useTranslation } from "react-i18next";
+
 import FooterLogo from "../assets/images/FooterLogo.png";
 import olovolaRoundedLogo from "../assets/images/olovolaRoundedLogo.png";
 
 function Footer() {
+  const { t, i18n } = useTranslation();
+  const { FooterSpan1, FooterSpan2, FooterSpan3, PageHeading, B2bHeading, BenefitsHeading, TWMHeading, VFHeading, FAQHeading, BlogsHeading, AllBHeading, TechHeading, ContactHeading, CopyrightFooterText, TOSFooter, FooterPP, FooterCP, FooterContactNumber} = t("Footer");
   return (
     <div className="relative bg-secondary py-[71px] z-[1] overflow-hidden">
       <img
@@ -21,99 +27,99 @@ function Footer() {
                 <img src={FooterLogo} className="w-[240px] h-[46px]" alt="" />
               </a>
               <p className="my-4 font-ManropeRegular text-white text-[16px] flex flex-col">
-                <span>Starting from loading to unloading and</span>
-                <span>maintaining the highest standards in terms of</span>
-                <span>safety while in transit, we take nothing to</span>
+                <span>{FooterSpan1}</span>
+                <span>{FooterSpan2}</span>
+                <span>{FooterSpan3}</span>
                 chance.
               </p>
             </div>
             <nav>
               <p className="mb-3 font-manropeBold text-[26px] text-lightGrey uppercase">
-                Pages
+                {PageHeading}
               </p>
               <Link
                 to="/"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
-                B2B
+                {B2bHeading}
               </Link>
               <Link
                 to="/"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
-                Our Benefits
+                {BenefitsHeading}
               </Link>
               <Link
                 to="/"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
-                Things We Move
+                {TWMHeading}
               </Link>
               <Link
                 to="/"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
-                Vehicle Fleet
+                {VFHeading}
               </Link>
               <Link
                 to="#"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
-                FAQ
+                {FAQHeading}
               </Link>
             </nav>
             <nav>
               <p className="mb-3 font-manropeBold text-[26px] text-lightGrey uppercase">
-                Blogs
+                {BlogsHeading}
               </p>
               <Link
                 to="/blog"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
-                All Blogs
+                {AllBHeading}
               </Link>
               <Link
                 to="/blog"
                 className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary"
               >
-                Technology
+                {TechHeading}
               </Link>
             </nav>
             <nav>
               <p className="mb-3 font-manropeBold text-[26px] text-lightGrey uppercase">
-                Contact
+                {ContactHeading}
               </p>
 
               <p className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary">
                 Info@olovola.com
               </p>
               <p className="flex mb-3 text-[16px] font-medium text-white transition  md:mb-2 hover:text-primary">
-                +92 309 6689696
+                {FooterContactNumber}
               </p>
             </nav>
           </div>
           <div className="flex flex-col items-center gap-[20px] justify-between pt-10 mt-10 border-t border-gray-100 md:flex-row md:items-center w-full">
             <p className="text-left font-ManropeRegular text-white text-[16px] md:mb-0">
-              © Copyright 2024 Olovola. All Rights Reserved.
+              {CopyrightFooterText}
             </p>
             <div className="flex items-start justify-start space-x-6 md:items-center md:justify-center">
               <Link
                 to="/Nopagefound"
                 className="font-ManropeRegular text-white text-[16px] transition hover:text-primary"
               >
-                Terms of Service
+                {TOSFooter}
               </Link>
               <Link
                 to="/Nopagefound"
                 className="font-ManropeRegular text-white text-[16px] transition hover:text-primary"
               >
-                Privacy Policy
+                {FooterPP}
               </Link>
               <Link
                 to="/Nopagefound"
                 className="font-ManropeRegular text-white text-[16px] transition hover:text-primary"
               >
-                Cookie Policy
+                {FooterCP}
               </Link>
             </div>
             <div className="flex gap-[8px]">

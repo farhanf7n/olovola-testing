@@ -80,5 +80,25 @@
     "emailPlaceholder": "اپنا ای میل درج کریں۔",
     "subButton": "سبسکرائب",
     "inputSubPara": "ہم اپنی رازداری کی پالیسی میں آپ کے ڈیٹا کی پرواہ کرتے ہیں۔"
+  },
+  "Footer": {
+    "FooterSpan1": "لوڈنگ سے لے کر ان لوڈنگ تک اور",
+    "FooterSpan2": "کے لحاظ سے اعلی ترین معیار کو برقرار رکھنا",
+    "FooterSpan3": "ٹرانزٹ کے دوران حفاظت، ہم کچھ نہیں لیتے",
+    "PageHeading": "صفحات",
+    "B2bHeading": "بی۲بی",
+    "BenefitsHeading": "ہمارے فوائد",
+    "TWMHeading": "چیزیں ہم منتقل کرتے ہیں۔",
+    "VFHeading": "گاڑیوں کا بیڑا",
+    "FAQHeading": "اکثر پوچھے گئے سوالات",
+    "BlogsHeading": "بلاگز",
+    "AllBHeading": "تمام بلاگز",
+    "TechHeading": "ٹیکنالوجی",
+    "ContactHeading": "رابطہ کریں۔",
+    "CopyrightFooterText": "© کاپی رائٹ 2024 Olovola. جملہ حقوق محفوظ ہیں.",
+    "TOSFooter": "سروس کی شرائط",
+    "FooterPP": "رازداری کی پالیسی",
+    "FooterCP": "کوکی پالیسی",
+    "FooterContactNumber": "6689696 309 92+"
   }
 }
