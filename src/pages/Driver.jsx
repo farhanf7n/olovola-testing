@@ -1,24 +1,25 @@
-import React from "react";
-import driverBanner from "../assets/images/driverBanner.png";
-import ArrowDown from "../assets/images/ArrowDown.png";
-import liveTracking from "../assets/images/liveTracking.png";
-import Schedule from "../assets/images/Schedule.png";
-import Transparency from "../assets/images/Transparency.png";
-import FullSupport from "../assets/images/FullSupport.png";
-import DiscountsCosts from "../assets/images/DiscountsCosts.png";
-import LessBureaucracy from "../assets/images/LessBureaucracy.png";
-
-import icomeIcon from "../assets/images/icomeIcon.png";
-import appScreenshot from "../assets/images/appScreenshot.png";
-import GooglePlayButton from "../assets/images/GooglePlayButton.png";
-import personHoldingPhone from "../assets/images/personHoldingPhone.png";
-import olovolaDocs from "../assets/images/olovolaDocs.png";
-import mapAndCar from "../assets/images/mapAndCar.png";
-import truckMoving from "../assets/images/truckMoving.png";
-
+import {driverBanner, ArrowDown, Transparency, FullSupport, DiscountsCosts, LessBureaucracy, appScreenshot, GooglePlayButton, personHoldingPhone, olovolaDocs, mapAndCar, truckMoving, Schedule, liveTracking} from '../assets/assets';
+import { useTranslation } from "react-i18next";
 import Footer from "../components/Footer";
 
 function Driver() {
+  const { t, i18n } = useTranslation();
+  const { DriverBannerHeading, FormLeftPara, FormRightPara, FullNamePlaceholder, PhoneNumberPlaceholder, EmailPlaceholder, CnicPlaceholder, DriverSubmitButton, DriverSubPara1, DriverSubPara2, StartedSimplePara, StartedHeadingStyled, WhyChooseUs, DriverStyledpara, DriverParaSimple, toGetStarted, DriverStartedPara1, DriverStartedPara2, HoldingPhonePara, NumberOne, SubmitDocsPara, NumberTwo, MapCarPara, NumberThree} = t("DriverPage");
+  const { DloadMainheading, DloadSubPara } = t("DownloadSection");
+  const {
+    bLTracking,
+    bLSubPara,
+    bFS,
+    bFSsub,
+    BFSupportHeading,
+    bSupport,
+    bDicountHeading,
+    bDiscountPara,
+    bLessBur,
+    bLessBurPara,
+    bFullPara,
+    bFullTransHeading,
+  } = t("Benefits");
   return (
     <div>
       {/* Banner Section */}
@@ -33,7 +34,7 @@ function Driver() {
           </div>
           <div className="flex flex-col justify-center items-center z-[1] w-full h-full absolute">
             <p className="uppercase text-[36px] font-ManropeEB sm:text-[80px] text-primary leading-[44px] sm:leading-[73px] pb-4 tracking-tight font-extrabold">
-              Driver
+              {DriverBannerHeading}
             </p>
             <p>
               <img src={ArrowDown} className="w-[24px] h-[24px]" alt="" />
@@ -53,22 +54,21 @@ function Driver() {
           {/* 60% Side */}
           <div className="w-full lg:w-3/5 flex items-end h-full">
             <p className="text-4xl text-white font-ManropeSB p-[40px]">
-              Contact us today and we’ll bring your flexible working vision to
-              life.
+              {FormLeftPara}
             </p>
           </div>
           {/* 40% Side */}
           <div className="w-full lg:w-2/5 flex flex-col justify-center gap-[18px] px-[40px] pt-0 pb-[40px] lg:py-0">
             {/* Form Side */}
             <p className="text-white first-line:flex flex-col text-3xl font-ManropeSB items-center">
-              Fill out the application and verify your phone number.
+              {FormRightPara}
             </p>
             <div className="group w-full md:w-80 lg:w-full">
               <div className="relative flex items-center">
                 <input
                   id="4"
                   type="text"
-                  placeholder="Enter your full name"
+                  placeholder={FullNamePlaceholder}
                   className="peer relative h-12 w-full rounded-md bg-gray-50 pl-10 pr-4 font-ManropeLight outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-blue-400 focus:drop-shadow-lg"
                 ></input>
                 <span className="material-symbols-outlined absolute left-2 transition-all duration-200 ease-in-out group-focus-within:text-blue-400">
@@ -100,7 +100,7 @@ function Driver() {
                 <input
                   id="4"
                   type="number"
-                  placeholder="Enter you phone number"
+                  placeholder={PhoneNumberPlaceholder}
                   className="peer relative h-12 w-full rounded-md font-ManropeLight bg-gray-50 pl-10 pr-4 outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-blue-400 focus:drop-shadow-lg"
                 ></input>
                 <span className="material-symbols-outlined absolute left-2 transition-all duration-200 ease-in-out group-focus-within:text-blue-400">
@@ -140,7 +140,7 @@ function Driver() {
                 <input
                   id="4"
                   type="text"
-                  placeholder="Enter your email address"
+                  placeholder={EmailPlaceholder}
                   className="peer relative h-12 w-full rounded-md bg-gray-50 pl-10 pr-4 font-ManropeLight outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-blue-400 focus:drop-shadow-lg"
                 ></input>
                 <span className="material-symbols-outlined absolute left-2 transition-all duration-200 ease-in-out group-focus-within:text-blue-400">
@@ -173,7 +173,7 @@ function Driver() {
                 <input
                   id="4"
                   type="number"
-                  placeholder="Enter your CNIC"
+                  placeholder={CnicPlaceholder}
                   className="peer relative h-12 w-full rounded-md bg-gray-50 pl-10 pr-4 font-ManropeLight outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-blue-400 focus:drop-shadow-lg"
                 ></input>
                 <span className="material-symbols-outlined absolute left-2 transition-all duration-200 ease-in-out group-focus-within:text-blue-400">
@@ -218,7 +218,7 @@ function Driver() {
                 type="submit"
                 className="w-full whitespace-nowrap text-[14px] bg-primary hover:bg-[#080C09] hover:text-[#FDD700] py-[15px] px-[20px] rounded-[8px] font-ManropeMedium transition-all duration-300 ease-in-out"
               >
-                Submit
+                {DriverSubmitButton}
               </button>
             </div>
           </div>
@@ -229,81 +229,79 @@ function Driver() {
       <div className="max-w-[1280px] mx-auto py-[71px]">
         {/* Heading & Paragraph */}
         <div>
-          <div className="flex flex-col text-3xl font-ManropeSB items-center">
-            <p className="text-center">
-              Why{" "}
-              <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
-                Choose Us
-              </span>
-            </p>
-          </div>
+          {/* TEST */}
+            {i18n.language === "en" ? (
+            // div1: Displayed when the language is English
+            <div className="flex flex-col text-3xl font-ManropeSB items-center text-center">
+              <p>
+                {StartedSimplePara}{" "}
+                <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
+                  {StartedHeadingStyled}
+                </span>
+              </p>
+            </div>
+          ) : (
+            // div2: Displayed when the language is not English (e.g., Urdu)
+            <div>
+              <p className="flex flex-col text-3xl font-ManropeSB items-center text-center">
+                {WhyChooseUs}
+                <div className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[22px] before:w-[70px] before:bottom-[-4px] before:right-[-14px] before:z-[-1]"></div>
+              </p>
+            </div>
+          )}
           <p className="pt-4 text-center px-[16px] flex flex-col font-ManropeRegular text-[16px]">
             <span>
-              Join the Olovola team to take advantage of additional benefits
-              including flexible earnings
+              {DriverSubPara1}
             </span>
-            <span>and no surprise fees.</span>
+            <span>{DriverSubPara2}</span>
           </p>
         </div>
         {/* image & Right side icons */}
         <div className="flex items-center justify-center pt-[60px]">
           <div className="max-w-[1280px] flex flex-wrap justify-center gap-[20px]">
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
-              <img src={icomeIcon} className="w-[56px] h-[56px]" alt="" />
+              <img src={liveTracking} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Additional Income</p>
-                <p className="font-ManropeRegular text-[16px]">
-                  The more you drive, the more income you will earn - It's as
-                  simple as that.
-                </p>
+                <p className="font-ManropeSB text-lg">{bLTracking}</p>
+                <p className="font-ManropeRegular text-[16px]">{bLSubPara}</p>
               </div>
             </div>
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={Schedule} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Flexible schedule</p>
-                <p className="font-ManropeRegular text-[16px]">
-                  Find a job where you have the flexibility to decide what
-                  days/times you want to work.
-                </p>
+                <p className="font-ManropeSB text-lg">{bFS}</p>
+                <p className="font-ManropeRegular text-[16px]">{bFSsub}</p>
               </div>
             </div>
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={Transparency} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Full Transparency</p>
-                <p className="font-ManropeRegular text-[16px]">
-                  You will receive a weekly report on your earnings and
-                  discounts.
-                </p>
+                <p className="font-ManropeSB text-lg">{bFullTransHeading}</p>
+                <p className="font-ManropeRegular text-[16px]">{bFullPara}</p>
               </div>
             </div>
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={FullSupport} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Full Support</p>
-                <p className="font-ManropeRegular text-[16px]">
-                  You will receive support from the Olovola team, supporting you
-                  with Trip issues etc.
-                </p>
+                <p className="font-ManropeSB text-lg">{BFSupportHeading}</p>
+                <p className="font-ManropeRegular text-[16px]">{bSupport}</p>
               </div>
             </div>
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={DiscountsCosts} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Discounts for costs</p>
+                <p className="font-ManropeSB text-lg">{bDicountHeading}</p>
                 <p className="font-ManropeRegular text-[16px]">
-                  Receive discounts at reaching milestones.
+                  {bDiscountPara}
                 </p>
               </div>
             </div>
             <div className="w-[386px] h-[245px] flex flex-col gap-[24px] p-[30px] items-left bg-lightBlue border-solid border-1 border-forBorder rounded-[16px]">
               <img src={LessBureaucracy} className="w-[56px] h-[56px]" alt="" />
               <div className="flex flex-col gap-[6px]">
-                <p className="font-ManropeSB text-lg">Less Bureaucracy</p>
+                <p className="font-ManropeSB text-lg">{bLessBur}</p>
                 <p className="font-ManropeRegular text-[16px]">
-                  We handle all documentation relating to the vehicle and
-                  routes, so you can drive with peace of mind.
+                  {bLessBurPara}
                 </p>
               </div>
             </div>
@@ -312,16 +310,14 @@ function Driver() {
       </div>
 
       {/* Download App Section */}
-      <div className="max-w-[1280px] mx-auto bg-secondary lg:rounded-[12px] ">
+      <div className="max-w-[1280px] mx-auto bg-secondary sm:rounded-[12px] ">
         <div className="flex flex-col md:flex-row items-center gap-[20px] justify-center py-[60px] mx-[20px]">
           <div className="w-full sm:w-1/2 flex flex-col justify-center items-left md:pl-20">
             <p className="text-4xl text-white font-ManropeSB">
-              Using multiplatform technology to digitize freight
+              {DloadMainheading}
             </p>
             <p className="pt-3.5 font-ManropeRegular text-[16px] text-white">
-              The user has the best possible experience scheduling and tracking
-              shipments with 360° insights thanks to Olovola Dashboard & Mobile
-              Applications.
+              {DloadSubPara}
             </p>
             <a href="/" className="pt-6">
               <img
@@ -342,19 +338,33 @@ function Driver() {
         {/* Heading & Paragraph */}
         <div>
           <div className="flex flex-col text-3xl font-ManropeSB items-center">
-            <p className="text-center">
-              <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-[4px] before:z-[-1]">
-                How{" "}
-              </span>
-              to get started
-            </p>
+            {/* Test */}
+            {i18n.language === "en" ? (
+            // div1: Displayed when the language is English
+            <div className="flex flex-col text-3xl font-ManropeSB items-center text-center">
+              <p>
+                
+                <span className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[13px] before:w-full before:bottom-[4px] before:right-0 before:z-[-1]">
+                  {DriverStyledpara}  
+                </span>
+                {" "}{DriverParaSimple}
+              </p>
+            </div>
+          ) : (
+            // div2: Displayed when the language is not English (e.g., Urdu)
+            <div>
+              <p className="flex flex-col text-3xl font-ManropeSB items-center text-center">
+                {toGetStarted}
+                <div className="relative font-ClashDisplayMedium before:block before:absolute before:bg-primary before:h-[22px] before:w-[70px] before:bottom-[-4px] before:right-[43px] before:z-[-1]"></div>
+              </p>
+            </div>
+          )}
           </div>
           <p className="pt-4 text-center px-[16px] flex flex-col font-ManropeRegular text-[16px]">
             <span>
-              Drive with us with simplicity and flexibility, working at your
-              preferred time and
+              {DriverStartedPara1}
             </span>
-            <span>with earning potential.</span>
+            <span>{DriverStartedPara2}</span>
           </p>
         </div>
 
@@ -369,11 +379,11 @@ function Driver() {
                     alt="personHoldingPhone"
                   />
                   <p className="font-ManropeSB text-lg">
-                    Get in touch with us.
+                    {HoldingPhonePara}
                   </p>
                 </div>
                 <p className="font-ManropeSB text-grayCloud text-[116px] leading-tight">
-                  01
+                  {NumberOne}
                 </p>
               </div>
               <div className="flex flex-col-reverse sm:flex-row gap-4 items-center justify-center px-10">
@@ -384,11 +394,11 @@ function Driver() {
                     alt="personHoldingPhone"
                   />
                   <p className="font-ManropeSB text-lg">
-                    Submit the required documentation.
+                    {SubmitDocsPara}
                   </p>
                 </div>
                 <p className="font-ManropeSB text-grayCloud text-[116px] leading-tight">
-                  02
+                  {NumberTwo}
                 </p>
               </div>
               <div className="flex gap-4 items-center justify-center px-10">
@@ -399,12 +409,11 @@ function Driver() {
                     alt="personHoldingPhone"
                   />
                   <p className="font-ManropeSB text-lg">
-                    You won't have to wait long to get verified by us and start
-                    driving.
+                    {MapCarPara}
                   </p>
                 </div>
                 <p className="font-ManropeSB text-grayCloud text-[116px] leading-tight">
-                  03
+                  {NumberThree}
                 </p>
               </div>
             </div>

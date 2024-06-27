@@ -100,5 +100,38 @@
     "FooterPP": "رازداری کی پالیسی",
     "FooterCP": "کوکی پالیسی",
     "FooterContactNumber": "6689696 309 92+"
+  },
+  "DriverPage": {
+    "DriverBannerHeading": "ڈرائیور",
+    "FormLeftPara": "آج ہی ہم سے رابطہ کریں اور ہم آپ کے لچکدار ورکنگ ویژن کو زندہ کریں گے۔",
+    "FormRightPara": "درخواست پُر کریں اور اپنے فون نمبر کی تصدیق کریں۔",
+    "FullNamePlaceholder": "اپنا پورا نام درج کریں",
+    "PhoneNumberPlaceholder": "اپنا فون نمبر درج کریں۔",
+    "EmailPlaceholder": "اپنا ای میل کا پتا لکھو",
+    "CnicPlaceholder": "اپنا CNIC درج کریں۔",
+    "DriverSubmitButton": "جمع کرائیں",
+    "DriverMainHeading": "ہمیں کیوں منتخب کریں۔",
+    "DriverSubPara1": "لچکدار کمائی سمیت اضافی فوائد سے فائدہ اٹھانے کے لیے Olovola ٹیم میں شامل ہوں۔",
+    "DriverSubPara2": "اور کوئی سرپرائز فیس نہیں۔",
+    "WhyChooseUs": "ہمیں کیوں منتخب کریں۔",
+    "toGetStarted": "شروع کرنے کا طریقہ",
+    "DriverStartedPara1": "ہمارے ساتھ سادگی اور لچک کے ساتھ گاڑی چلائیں، اپنے من پسند وقت پر کام کریں۔",
+    "DriverStartedPara2": "کمانے کی صلاحیت کے ساتھ۔",
+    "HoldingPhonePara": "ہم سے رابطہ کریں۔",
+    "SubmitDocsPara": "مطلوبہ دستاویزات جمع کروائیں۔",
+    "MapCarPara": "آپ کو ہمارے ذریعے تصدیق کروانے اور ڈرائیونگ شروع کرنے کے لیے زیادہ انتظار نہیں کرنا پڑے گا۔",
+    "NumberOne": "٠١",
+    "NumberTwo": "٠٢",
+    "NumberThree": "٠٣"
+  },
+  "NoPage": {
+    "FOFheading": "٤٠٤",
+    "NPheadingOne": "لگتا ہے آپ کھو گئے ہیں۔",
+    "NPheadingTwo": "آپ جس صفحہ کی تلاش کر رہے ہیں وہ دستیاب نہیں ہے!",
+    "GoHomeButton": "گھر جاو"
+  },
+  "UnderConstruction": {
+    "ConHeadingOne": "یہ صفحہ زیر تعمیر ہے۔",
+    "ConHeadingTwo": "جلد ہی تیار ہو جائے گا۔"
   }
 }

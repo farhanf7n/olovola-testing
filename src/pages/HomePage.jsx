@@ -1,5 +1,4 @@
-import LanguageSelector from "../components/Language-selector";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";

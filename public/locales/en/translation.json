@@ -105,5 +105,41 @@
     "FooterPP": "Privacy Policy",
     "FooterCP": "Cookie Policy",
     "FooterContactNumber": "+92 309 6689696"
+  },
+  "DriverPage": {
+    "DriverBannerHeading": "Driver",
+    "FormLeftPara": "Contact us today and we’ll bring your flexible working vision to life.",
+    "FormRightPara": "Fill out the application and verify your phone number.",
+    "FullNamePlaceholder": "Enter your full name",
+    "PhoneNumberPlaceholder": "Enter you phone number",
+    "EmailPlaceholder": "Enter your email address",
+    "CnicPlaceholder": "Enter your CNIC",
+    "DriverSubmitButton": "Submit",
+    "DriverHeadingSimple": "Why",
+    "DriverHeadingStyled": "Choose us",
+    "DriverSubPara1": "Join the Olovola team to take advantage of additional benefits including flexible earnings",
+    "DriverSubPara2": "and no surprise fees.",
+    "DriverStyledpara": "How",
+    "DriverParaSimple": "to get started",
+    "StartedSimplePara": "Why",
+    "StartedHeadingStyled": "Choose Us",
+    "DriverStartedPara1": "Drive with us with simplicity and flexibility, working at your preferred time and",
+    "DriverStartedPara2": "with earning potential.",
+    "HoldingPhonePara": "Get in touch with us.",
+    "SubmitDocsPara": "Submit the required documentation.",
+    "MapCarPara": "You won't have to wait long to get verified by us and start driving.",
+    "NumberOne": "01",
+    "NumberTwo": "02",
+    "NumberThree": "03"
+  },
+  "NoPage": {
+    "FOFheading": "404",
+    "NPheadingOne": "Look like you're lost",
+    "NPheadingTwo": "the page you are looking for not avaible!",
+    "GoHomeButton": "Go to Home"
+  },
+  "UnderConstruction": {
+    "ConHeadingOne": "This Page Is Under Construction",
+    "ConHeadingTwo": "Will be up and running soon."
   }
 }
