@@ -1,6 +1,7 @@
-import React from "react";
-
+import { useTranslation } from "react-i18next";
 function B2B() {
+  const { t } = useTranslation();
+  const { ConHeadingOne, ConHeadingTwo } = t("UnderConstruction");
   return (
     <div>
       <div
@@ -8,9 +9,9 @@ function B2B() {
         style={{ height: `calc(100vh - 98px)` }}
       >
         <div className="text-5xl font-semibold mb-3 text-center">
-          This Page Is Under Construction
+          {ConHeadingOne}
         </div>
-        <div className="opacity-50 mb-8">Will be up and running soon.</div>
+        <div className="opacity-50 mb-8">{ConHeadingTwo}</div>
         <div className="animate-bounce">
           <svg
             className="animate-spin  -ml-1 mr-3 h-8 w-8 text-black"
